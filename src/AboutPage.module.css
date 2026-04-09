@@ -1,0 +1,112 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-bg);
+  padding: 48px 32px 80px;
+  animation: fadeInUp 0.4s ease both;
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.back {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--color-secondary);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0;
+  margin-bottom: 48px;
+  transition: color 200ms;
+}
+
+.back:hover { color: var(--color-primary); }
+
+.hero {
+  margin-bottom: 64px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--color-sage);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-text);
+}
+
+.heading em { color: var(--color-primary); font-style: italic; }
+
+.body { display: flex; flex-direction: column; gap: 56px; }
+
+.block {}
+
+.blockTitle {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.blockText {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--color-text-muted);
+  font-weight: 300;
+  margin-bottom: 14px;
+}
+
+.blockText em { color: var(--color-primary); font-style: italic; }
+.blockText strong { color: var(--color-text); font-weight: 600; }
+
+.quote {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-style: italic;
+  color: var(--color-primary);
+  border-left: 3px solid var(--color-secondary);
+  padding-left: 24px;
+  margin-top: 28px;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.valueCard {
+  background: var(--color-card);
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(61,43,39,0.06);
+}
+
+.valueSymbol { font-size: 28px; color: var(--color-primary); display: block; margin-bottom: 12px; }
+
+.valueTitle {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+.valueDesc { font-size: 13px; line-height: 1.7; color: var(--color-text-muted); font-weight: 300; }
+
+@media (max-width: 600px) {
+  .values { grid-template-columns: 1fr; }
+  .page { padding: 32px 20px 60px; }
+}

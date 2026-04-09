@@ -1,0 +1,270 @@
+/* ── Brand Pillars ── */
+.pillars {
+  background: var(--color-card);
+  padding: 64px 32px;
+}
+
+.pillarsInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  text-align: center;
+}
+
+.pillar {
+  padding: 32px 24px;
+}
+
+.pillarSymbol {
+  font-size: 36px;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.pillarTitle {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.pillarDesc {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  font-weight: 300;
+}
+
+/* ── Products ── */
+.products {
+  padding: 80px 32px;
+  background: var(--color-bg);
+}
+
+.productsInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHead {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--color-sage);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 8px 22px;
+  border-radius: 50px;
+  border: 1.5px solid var(--color-secondary);
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.filterBtn:hover,
+.filterActive {
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-primary);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* ── Marquee ── */
+.marqueeBar {
+  background: var(--color-primary);
+  padding: 14px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 13px;
+  color: rgba(253, 246, 240, 0.85);
+  letter-spacing: 0.5px;
+}
+
+.marqueeTrack {
+  display: inline-block;
+  animation: marquee 26s linear infinite;
+}
+
+/* ── Routine ── */
+.routine {
+  padding: 80px 32px;
+  background: #F5E6DC;
+}
+
+.routineInner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.routineInner .eyebrow {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.routineInner .sectionTitle {
+  margin-bottom: 48px;
+}
+
+.routineSteps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.routineCard {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 32px 24px;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.stepNum {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  color: #EDD9CC;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.stepLabel {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-sage);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.stepProduct {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.stepDesc {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ── Testimonials ── */
+.testimonials {
+  padding: 80px 32px;
+  background: var(--color-bg);
+}
+
+.testimonialsInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.testimonialCard {
+  background: var(--color-card);
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(61, 43, 39, 0.06);
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.review {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.reviewer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.reviewerName {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.reviewerProduct {
+  font-size: 11px;
+  color: var(--color-secondary);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .pillarsInner {
+    grid-template-columns: 1fr;
+  }
+  .routineSteps {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .products,
+  .routine,
+  .testimonials,
+  .pillars {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
