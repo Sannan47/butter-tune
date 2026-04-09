@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './CheckoutPage.module.css';
+const phone = import.meta.env.VITE_WHATSAPP_NUMBER;
 
 export default function CheckoutPage({ cart, onBack, onOrderSent }) {
   const [form, setForm] = useState({ name: '', phone: '', address: '', city: '', notes: '' });
@@ -47,7 +48,7 @@ export default function CheckoutPage({ cart, onBack, onOrderSent }) {
     // const igUrl = `https://ig.me/m/butter.tune_skincare?text=${encoded}`;
 
     // WhatsApp deep link — opens WhatsApp app or web
-    const waUrl = `https://wa.me/923335775929?text=${encoded}`;
+    const waUrl = `https://wa.me/${phone}?text=${encoded}`;
     window.open(waUrl, '_blank');
 
     setSent(true);
