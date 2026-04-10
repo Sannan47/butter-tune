@@ -32,19 +32,9 @@ export default function Hero({ onShopNow, onProductClick, onOurStory }) {
         </div>
 
         {/* Right product grid */}
-        <div className={styles.grid}>
-          {products.slice(0, 4).map((p, i) => (
-            <button
-              key={p.id}
-              className={styles.card}
-              style={{ background: p.color, transform: i % 2 === 1 ? 'translateY(20px)' : 'none' }}
-              onClick={() => onProductClick(p)}
-            >
-              <span className={styles.cardSymbol}>{p.symbol}</span>
-              <span className={styles.cardName}>{p.name}</span>
-              <span className={styles.cardPrice}>Rs. {p.price.toLocaleString()}</span>
-            </button>
-          ))}
+        <div className={styles.visualArea}>
+          <img src={products[4].image} className={styles.mainImage} />
+          <img src={products[1].image} className={styles.secondaryImage} />
         </div>
       </div>
     </section>

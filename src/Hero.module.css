@@ -3,6 +3,21 @@
   padding: 80px 32px 100px;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(139,74,66,0.15), transparent);
+  right: 10%;
+  top: 20%;
+  filter: blur(60px);
+}
+
+
+
+
+
 .inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -10,6 +25,46 @@
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
+}
+
+
+.visualArea {
+  position: relative;
+  height: 500px;
+}
+
+.visualArea::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  width: 380px;
+  height: 420px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 32px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+}
+
+
+.mainImage {
+  position: absolute;
+  right: -40px;      
+  top: 20px;
+  width: 420px;     
+  object-fit: contain;
+  filter: drop-shadow(0 40px 60px rgba(0,0,0,0.18));
+  z-index: 2;
+}
+
+.secondaryImage {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 260px;
+  opacity: 0.95;
+  transform: rotate(-8deg);
+  z-index: 1;
 }
 
 .copy {
@@ -32,6 +87,7 @@
   line-height: 1.1;
   color: var(--color-text);
   margin-bottom: 24px;
+  letter-spacing: -1px;
 }
 
 .accent {
@@ -43,7 +99,7 @@
   font-size: 14px;
   line-height: 1.8;
   color: var(--color-text-muted);
-  max-width: 420px;
+  max-width: 380px;
   margin-bottom: 36px;
   font-weight: 300;
 }
