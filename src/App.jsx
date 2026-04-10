@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import ProductCard from './ProductCard';
@@ -22,6 +22,26 @@ export default function App() {
 
   const filtered = activeCategory === 'all' ? products : products.filter((p) => p.category === activeCategory);
   const cartCount = cart.reduce((s, i) => s + i.qty, 0);
+
+  const marqueeRef = useRef(null);
+
+  useEffect(() => {
+    let x = 0;
+    let raf;
+    const track = marqueeRef.current;
+    if (!track) return;
+
+    const step = () => {
+      x -= 1; // speed: increase number for faster
+      const halfWidth = track.scrollWidth / 2;
+      if (Math.abs(x) >= halfWidth) x = 0;
+      track.style.transform = `translateX(${x}px)`;
+      raf = requestAnimationFrame(step);
+    };
+
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, []);
 
   const navigate = useCallback((target) => {
     setPage(target);
@@ -111,8 +131,12 @@ export default function App() {
         </section>
 
         <div className={styles.marqueeBar}>
-          <div className={styles.marqueeTrack}>
-            {Array(4).fill('✦ Rice Serum  ·  Rice Cleanser  ·  Rice Cream  ·  Zafran Cream  ·  Cherry Butter  ·  Coffee & Sugar Scrub  ·  Blue Moroccan Scrub  ·  Tune Into Your Perfect Glow  ').join('  ')}
+          <div className={styles.marqueeTrack} ref={marqueeRef}>
+            {Array(4).fill(null).map((_, i) => (
+              <span key={i} className={styles.marqueeContent}>
+                ✦ Rice Serum · Rice Cleanser · Rice Cream · Zafran Cream · Cherry Butter · Coffee & Sugar Scrub · Blue Moroccan Scrub · Tune Into Your Perfect Glow ·&nbsp;
+              </span>
+            ))}
           </div>
         </div>
 
