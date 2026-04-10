@@ -13,7 +13,7 @@
   box-shadow: 0 12px 32px rgba(61, 43, 39, 0.12);
 }
 
-.visual {
+/* .visual {
   padding: 40px 32px 32px;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,20 @@
   position: relative;
   min-height: 200px;
   justify-content: center;
+} */
+
+.visual {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: bottom; */
 }
 
 .tag {

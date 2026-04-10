@@ -21,7 +21,8 @@ export default function ProductModal({ product, onClose, onAdd, justAdded }) {
 
         {/* Visual */}
         <div className={styles.visual} style={{ background: product.color }}>
-          <span className={styles.symbol}>{product.symbol}</span>
+          {/* <span className={styles.symbol}>{product.symbol}</span> */}
+          <img src={product.image} alt={product.name} className={styles.image} />
         </div>
 
         <p className={styles.desc}>{product.description}</p>

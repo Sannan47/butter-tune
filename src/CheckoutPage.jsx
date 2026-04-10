@@ -68,7 +68,7 @@ export default function CheckoutPage({ cart, onBack, onOrderSent }) {
       <div className={styles.page}>
         <div className={styles.successWrap}>
           <span className={styles.successSymbol}>✦</span>
-          <h2 className={styles.successTitle}>Opening Instagram…</h2>
+          <h2 className={styles.successTitle}>Opening Whatsapp…</h2>
           <p className={styles.successDesc}>
             Your order message is pre-filled and ready. Just hit <strong>Send</strong> in the DM!
           </p>
@@ -88,7 +88,7 @@ export default function CheckoutPage({ cart, onBack, onOrderSent }) {
         <div className={styles.header}>
           <p className={styles.eyebrow}>Almost There</p>
           <h1 className={styles.heading}>Complete Your Order</h1>
-          <p className={styles.subhead}>Fill in your details and we'll open Instagram with a pre-filled message — just tap Send!</p>
+          <p className={styles.subhead}>Fill in your details and we'll open Whatsapp with a pre-filled message — just tap Send!</p>
         </div>
 
         <div className={styles.layout}>

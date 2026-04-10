@@ -6,8 +6,9 @@ export default function ProductCard({ product, onDetails, onAdd, justAdded }) {
     <div className={styles.card}>
       {/* Visual area */}
       <div className={styles.visual} style={{ background: product.color }}>
+        {/* <span className={styles.symbol}>{product.symbol}</span> */}
+        <img src={product.image} alt={product.name} className={styles.image} />
         <span className={styles.tag}>{product.tag}</span>
-        <span className={styles.symbol}>{product.symbol}</span>
         <span className={styles.name}>{product.name}</span>
         <span className={styles.subtitle}>{product.subtitle}</span>
       </div>

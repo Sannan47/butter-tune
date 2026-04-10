@@ -1,3 +1,11 @@
+import p1 from "./assets/p1.webp";
+import p2 from "./assets/p2.webp";
+import p3 from "./assets/p3.webp";
+import p4 from "./assets/p4.webp";
+import p5 from "./assets/p5.webp";
+import p6 from "./assets/p6.webp";
+import p7 from "./assets/p7.webp";
+
 export const products = [
   {
     id: 1,
@@ -5,6 +13,7 @@ export const products = [
     subtitle: "Face Serum",
     size: "30 ml",
     price: 1800,
+    image: p1,
     category: "face",
     tag: "Bestseller",
     description:
@@ -19,6 +28,7 @@ export const products = [
     subtitle: "Face Cleanser",
     size: "120 ml",
     price: 1500,
+    image: p2,
     category: "face",
     tag: "Fan Favorite",
     description:
@@ -33,6 +43,7 @@ export const products = [
     subtitle: "Hydrating Face Cream",
     size: "30 g",
     price: 1600,
+    image: p3,
     category: "face",
     tag: "New",
     description:
@@ -47,6 +58,7 @@ export const products = [
     subtitle: "Saffron Brightening Cream",
     size: "30 ml",
     price: 2200,
+    image: p4,
     category: "face",
     tag: "Premium",
     description:
@@ -61,6 +73,7 @@ export const products = [
     subtitle: "3 Butters Hydrating Body Butter",
     size: "125 ml",
     price: 1900,
+    image: p5,
     category: "body",
     tag: "Bestseller",
     description:
@@ -75,6 +88,7 @@ export const products = [
     subtitle: "Beauty Scrub for Skin Lightening",
     size: "200 g",
     price: 1400,
+    image: p6,
     category: "scrubs",
     tag: "Popular",
     description:
@@ -89,6 +103,7 @@ export const products = [
     subtitle: "Beauty Scrub for Skin Lightening",
     size: "200 g",
     price: 1600,
+    image: p7,
     category: "scrubs",
     tag: "Unique",
     description:

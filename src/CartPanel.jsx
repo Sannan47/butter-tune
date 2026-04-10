@@ -54,7 +54,7 @@ export default function CartPanel({ cart, onClose, onRemove, onUpdateQty, onChec
               <button className={styles.checkoutBtn} onClick={() => { onClose(); onCheckout(); }}>
                 Proceed to Checkout →
               </button>
-              <p className={styles.checkoutNote}>You'll fill your details and we'll open Instagram with your order pre-filled</p>
+              <p className={styles.checkoutNote}>You'll fill your details and we'll open Whatsapp with your order pre-filled</p>
             </div>
           </>
         )}
