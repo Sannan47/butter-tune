@@ -223,7 +223,7 @@
   .inner {
     grid-template-columns: 1fr;
   }
-  .grid {
+  .visualArea {
     display: none;
   }
   .hero {
