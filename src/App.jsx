@@ -134,7 +134,7 @@ export default function App() {
           <div className={styles.marqueeTrack} ref={marqueeRef}>
             {Array(4).fill(null).map((_, i) => (
               <span key={i} className={styles.marqueeContent}>
-                ✦ Rice Serum · Rice Cleanser · Rice Cream · Zafran Cream · Cherry Butter · Coffee & Sugar Scrub · Blue Moroccan Scrub · Tune Into Your Perfect Glow ·&nbsp;
+                ✦ Rice Serum · Rice Cleanser · Rice Cream · Zafran Cream · Cherry Butter · Coffee & Sugar Scrub · Blue Moroccan Scrub · Tune Into Your Perfect Glow ✦
               </span>
             ))}
           </div>
